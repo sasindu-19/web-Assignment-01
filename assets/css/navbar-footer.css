@@ -1,0 +1,241 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background-color: #eaebea;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-family: "Playfair Display", "Georgia", serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #033143;
+}
+
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  gap: 10px;
+}
+
+.nav-links li a {
+  font-weight: 600;
+  position: relative;
+  display: block;
+  color: #333333;
+  text-decoration: none;
+  padding: 10px 16px;
+  text-align: center;
+}
+
+.nav-links li a:hover::after,
+.nav-links li a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #033143;
+}
+
+.btn-contact {
+  background-color: #003345;
+  color: white;
+  padding: 12px 28px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.hamburger-menu span {
+  width: 28px;
+  height: 3px;
+  background-color: #033143;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.footer-section {
+  width: 100%;
+  background-color: #022c3d;
+  color: #ffffff;
+  padding: 80px 8% 50px 8%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-col01,
+.footer-col02,
+.footer-col03,
+.footer-col04 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-col01 {
+  flex: 1.5;
+}
+
+.footer-col01 h3 {
+  font-family: "Playfair Display", "Georgia", serif;
+  font-size: 26px;
+  color: #ffffff;
+}
+
+.footer-col01 p {
+  font-size: 14px;
+  color: #b0c4de;
+  line-height: 1.6;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 12px;
+  margin-top: 5px;
+}
+
+.social-icon {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 38px;
+  height: 38px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.footer-section h4 {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #00a8b5;
+  margin-bottom: 4px;
+}
+
+.footer-section ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-section ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0.9;
+  transition:
+    color 0.2s ease,
+    padding-left 0.2s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #00a8b5;
+  padding-left: 4px;
+}
+
+.copyright {
+  margin-top: auto;
+  font-size: 12px;
+  color: #b0c4de;
+  opacity: 0.6;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 20px 24px;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .nav-actions {
+    display: none;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    background-color: #eaebea;
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-links li a {
+    padding: 18px 0;
+    display: block;
+    width: 100%;
+  }
+
+  .nav-links.active {
+    max-height: 350px;
+  }
+
+  .hamburger-menu.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+
+  .hamburger-menu.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger-menu.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+
+  .footer-section {
+    flex-direction: column;
+    gap: 40px;
+    padding: 50px 24px 40px 24px;
+  }
+
+  .footer-col01 {
+    flex: 1;
+  }
+
+  .copyright {
+    margin-top: 20px;
+  }
+}

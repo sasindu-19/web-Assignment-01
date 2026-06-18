@@ -1,4 +1,4 @@
-/*Global Reset*/
+/* Global Reset */
 * {
   margin: 0;
   padding: 0;
@@ -12,70 +12,7 @@ body {
   background-color: #f4f3ee;
 }
 
-/*Navigation Bar Section*/
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 8%;
-  background-color: #eaebea;
-  width: 100%;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-}
-
-.logo {
-  font-family: "Playfair Display", "Georgia", serif;
-  font-size: 26px;
-  font-weight: 700;
-  color: #033143;
-}
-
-.nav-links {
-  display: flex;
-  list-style-type: none;
-  gap: 10px;
-}
-
-.nav-links li a {
-  font-weight: 600;
-  position: relative;
-  display: block;
-  color: #333333;
-  text-decoration: none;
-  padding: 10px 16px;
-  text-align: center;
-}
-
-.nav-links li a:hover::after,
-.nav-links li a.active::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #033143;
-}
-
-.btn-contact {
-  background-color: #003345;
-  color: white;
-  padding: 12px 28px;
-  font-size: 14px;
-  font-weight: 600;
-  border-radius: 50px;
-  border: none;
-  cursor: pointer;
-}
-
-.btn-contact:hover {
-  background-color: #034f6d;
-}
-
-/*Hero Section */
+/* Hero Section */
 .hero-section {
   position: relative;
   width: 100%;
@@ -177,7 +114,7 @@ body {
   color: #ffffff;
 }
 
-/* --- 4. Hospitality Section --- */
+/* Hospitality Section */
 .hospitality-section {
   width: 100%;
   display: flex;
@@ -238,8 +175,7 @@ body {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
-/* destinations-section */
-
+/* Destinations Section */
 .destinations-section {
   display: flex;
   flex-direction: column;
@@ -289,7 +225,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-
   padding: 24px;
   color: white;
   gap: 10px;
@@ -323,6 +258,7 @@ body {
   cursor: pointer;
   width: 100%;
 }
+
 .card-sigiriya {
   background:
     linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0) 60%),
@@ -347,7 +283,7 @@ body {
     url("../Images/kandy.webp") no-repeat center center/cover;
 }
 
-/* cta-section */
+/* CTA Section */
 .cta-section {
   background:
     linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
@@ -419,33 +355,19 @@ body {
   background-color: white;
   color: #033143;
 }
+
 /* ==========================================================================
-   📱 5. MOBILE & TABLET RESPONSIVE MEDIA QUERY (Screen < 768px)
+   📱 MOBILE & TABLET RESPONSIVE MEDIA QUERY (Screen < 768px)
    ========================================================================== */
 @media (max-width: 768px) {
-  /* Navbar Responsive */
-  .navbar {
-    flex-direction: column;
-    gap: 15px;
-    padding: 15px 20px;
-  }
-
-  .nav-links {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  /* Hero Section Responsive */
   .hero-row-top h1 {
-    font-size: 34px; /* Title එක පොඩි කලා phone එකට ගැලපෙන්න */
+    font-size: 34px;
   }
 
   .hero-row-top p {
     font-size: 15px;
   }
 
-  /* Search Bar Responsive */
   .hero-row-bottm {
     flex-direction: column;
     border-radius: 20px;
@@ -462,9 +384,8 @@ body {
     justify-content: center;
   }
 
-  /* Hospitality Section Responsive */
   .hospitality-section {
-    flex-direction: column-reverse; /* Mobile එකේදී Image එක උඩටත් Text එක යටටත් ගන්නවා */
+    flex-direction: column-reverse;
     gap: 40px;
     padding: 40px 24px;
     text-align: center;
@@ -484,7 +405,7 @@ body {
   }
 
   .hospitality-right img {
-    max-width: 100%; /* Phone එකේ size එකටම image එක auto කුඩා වෙනවා */
+    max-width: 100%;
   }
 
   .destinations-top {
@@ -493,25 +414,48 @@ body {
   }
 
   .destinations-top h2 {
-    font-size: 30px; /* ලොකු වැඩි නිසා මාතෘකාව පොඩ්ඩක් කුඩා කලා */
+    font-size: 30px;
   }
 
   .destinations-top p {
-    font-size: 15px; /* Paragraph එකේ අකුරු සයිස් එක පොඩ්ඩක් අඩු කලා */
+    font-size: 15px;
   }
 
-  /* 2. ප්‍රධාන Flex Container එක වම-දකුණ (Row) ඉඳන් උඩ-යට (Column) කිරීම */
   .destinations-bottom {
-    flex-direction: column; /* කාඩ් 4 එකක් යට එකක් පෙළගස්වන මැජික් ලයින් එක */
-    gap: 20px; /* කාඩ් අතර පරතරය */
-    padding: 0 24px; /* දෙපැත්තෙන් ලස්සනට margin එකක් තියාගන්න */
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 24px;
     margin: 20px auto 40px auto;
   }
 
-  /* 3. තනි කාඩ් එකක පළල සහ උස phone screen එකට fit කිරීම */
   .destinations-bottom-card {
-    width: 100%; /* කාඩ් එක phone එකේ පළලටම (Full width) ගන්නවා */
-    height: 350px; /* Phone එකේදී උස 400px වැඩි නිසා 350px කලා */
-    padding: 20px; /* කාඩ් එක ඇතුලේ තියෙන padding පොඩ්ඩක් අඩු කලා */
+    width: 100%;
+    height: 350px;
+    padding: 20px;
+  }
+
+  .cta-section {
+    padding: 60px 20px;
+    gap: 30px;
+    height: auto;
+  }
+
+  .cta-section-top h1 {
+    font-size: 32px;
+  }
+
+  .cta-section-top p {
+    font-size: 15px;
+  }
+
+  .cta-section-bottom {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+    margin-top: 5px;
+  }
+
+  .cta-section-bottom button {
+    width: 100%;
   }
 }
