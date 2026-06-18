@@ -11,10 +11,10 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
         <ul class="nav-links" id="nav-menu">
           <li><a href="index.html">Home</a></li>
-          <li><a href="#">Destinations</a></li>
-          <li><a href="#">Heritage</a></li>
-          <li><a href="#">Experiences</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="Destinations.html">Destinations</a></li>
+          <li><a href="Heritage.html">Heritage</a></li>
+          <li><a href="Experiences.html">Experiences</a></li>
+          <li><a href="About.html">About</a></li>
         </ul>
         <div class="nav-actions">
           <button class="btn-contact">Contact Us</button>
