@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (navbarContainer) {
     navbarContainer.innerHTML = `
       <section class="navbar">
-        <div class="logo">Explore Sri Lanka</div>
+        <div class="logo"><a href="index.html">Explore Sri Lanka</a></div>
         <div class="hamburger-menu" id="hamburger-btn">
           <span></span>
           <span></span>
