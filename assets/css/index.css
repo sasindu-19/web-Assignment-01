@@ -238,6 +238,39 @@ body {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
+/* destinations-section */
+
+.destinations-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e9e9e9;
+}
+
+.destinations-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  gap: 14px;
+}
+
+.destinations-top h2 {
+  font-family: "Playfair Display", "Georgia", serif;
+  font-size: 40px;
+  color: #033143;
+  font-weight: 700;
+}
+
+.destinations-top p {
+  color: #555555;
+  line-height: 1.7;
+  font-size: 18px;
+  text-align: center;
+  max-width: 650px;
+}
+
 /* ==========================================================================
    📱 5. MOBILE & TABLET RESPONSIVE MEDIA QUERY (Screen < 768px)
    ========================================================================== */
