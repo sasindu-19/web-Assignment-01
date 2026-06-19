@@ -14,7 +14,7 @@ body {
 /* hero section */
 .exp-hero {
   width: 100%;
-  height: 550px;
+  height: 380px;
   background:
     linear-gradient(rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.45) 100%),
     url("../Images/leopard_hero.jpg") no-repeat center center/cover;
@@ -377,4 +377,357 @@ body {
   font-size: 14px;
   color: #666666;
   line-height: 1.5;
+}
+
+/* immersion-section */
+.immersion-section {
+  width: 100%;
+  padding: 80px 8%;
+  background-color: #ffffff;
+}
+
+.immersion-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.immersion-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.circle-image-wrapper {
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.circle-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.immersion-right {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.immersion-right h2 {
+  font-family: "Playfair Display", "Georgia", serif;
+  font-size: 36px;
+  color: #033143;
+}
+
+.immersion-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.immersion-item {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.item-icon {
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+}
+
+.item-text h3 {
+  font-size: 16px;
+  color: #033143;
+  margin-bottom: 4px;
+}
+
+.item-text p {
+  font-size: 14px;
+  color: #666666;
+  line-height: 1.4;
+}
+
+.curate-btn {
+  background-color: transparent;
+  color: #033143;
+  border: 1px solid #033143;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 50px;
+  align-self: flex-start;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+}
+
+.curate-btn:hover {
+  background-color: #033143;
+  color: #ffffff;
+}
+
+.plus-icon {
+  background-color: #022c3d;
+  color: #ffffff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+/* story-sectio */
+.story-section {
+  width: 100%;
+  padding: 60px 8% 100px 8%;
+  background-color: #f4f3ee;
+  display: flex;
+  justify-content: center;
+}
+
+.story-board {
+  background-color: #022c3d;
+  padding: 50px 40px;
+  width: 100%;
+  max-width: 950px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.story-board h2 {
+  font-family: "Playfair Display", "Georgia", serif;
+  font-size: 32px;
+}
+
+.story-board p {
+  color: #b0c4de;
+  font-size: 15px;
+  max-width: 500px;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.story-form {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 50px;
+  padding: 6px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.story-form input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 0 20px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.story-form input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.story-form button {
+  background-color: #00a8b5;
+  color: #ffffff;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.story-form button:hover {
+  background-color: #038a94;
+}
+
+/* media quaries */
+@media (max-width: 768px) {
+  .exp-hero {
+    height: 420px;
+    padding: 0 24px 40px 24px;
+  }
+
+  .exp-hero h1 {
+    font-size: 34px;
+  }
+
+  .exp-hero p {
+    font-size: 14px;
+  }
+
+  .adventure-section {
+    padding: 50px 24px;
+    gap: 35px;
+  }
+
+  .adventure-section-top h2 {
+    font-size: 28px;
+  }
+
+  .adventure-section-bottom {
+    gap: 20px;
+  }
+
+  .adventure-section-bottom-top {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .adv-card {
+    width: 100%;
+    height: 220px;
+  }
+
+  .adventure-section-bottom-bottom {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .adventure-section-bottom-bottom h3 {
+    font-size: 22px;
+  }
+
+  .luxury-escapes-section {
+    padding: 40px 24px;
+  }
+
+  .escapes-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .escape-info-side {
+    padding: 35px 20px;
+  }
+
+  .escape-info-side h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .escape-info-side > p {
+    font-size: 14px;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+  }
+
+  .escape-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .escape-image-side {
+    width: 100%;
+    height: 250px;
+  }
+
+  .wellness-section {
+    padding: 50px 24px;
+  }
+
+  .wellness-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 30px;
+  }
+
+  .wellness-title h2 {
+    font-size: 28px;
+  }
+
+  .wellness-bottom {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .well-card img {
+    height: 200px;
+  }
+
+  .well-info {
+    padding: 20px;
+  }
+
+  .immersion-section {
+    padding: 50px 24px;
+  }
+
+  .immersion-container {
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .circle-image-wrapper {
+    width: 280px;
+    height: 280px;
+  }
+
+  .immersion-right h2 {
+    font-size: 28px;
+  }
+
+  .curate-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .story-section {
+    padding: 40px 24px 60px 24px;
+  }
+
+  .story-board {
+    padding: 35px 20px;
+  }
+
+  .story-board h2 {
+    font-size: 26px;
+  }
+
+  .story-form {
+    flex-direction: column;
+    background: transparent;
+    border: none;
+    gap: 12px;
+    padding: 0;
+  }
+
+  .story-form input {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 14px 20px;
+    border-radius: 50px;
+    width: 100%;
+  }
+
+  .story-form button {
+    padding: 14px 0;
+    width: 100%;
+  }
 }
