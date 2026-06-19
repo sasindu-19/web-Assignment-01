@@ -206,3 +206,175 @@ body {
   background-color: #ffffff;
   color: #033143;
 }
+
+/* luxury-escapes-section */
+.luxury-escapes-section {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 8% 40px 8%;
+  align-items: center;
+  justify-content: center;
+  background-color: #fbfbf9;
+}
+
+.escapes-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #033143;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1400px;
+  height: 400px;
+}
+
+.escape-info-side {
+  flex: 1.1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sect-tag {
+  color: #00a896;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.escape-info-side h2 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-family: "serif";
+  margin-bottom: 20px;
+}
+
+.escape-info-side > p {
+  color: #a4b9c0;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 30px;
+}
+
+.escape-row {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.escape-mini-card {
+  flex: 1;
+}
+
+.escape-mini-card h4 {
+  color: #00b4d8;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.escape-mini-card p {
+  color: #a4b9c0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.escape-image-side {
+  flex: 1;
+  position: relative;
+}
+
+.escape-image-side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* wellness-section */
+.wellness-section {
+  width: 100%;
+  padding: 80px 8%;
+  background-color: #f4f3ee;
+}
+
+.wellness-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 40px;
+}
+
+.wellness-title h2 {
+  font-family: "Playfair Display", "Georgia", serif;
+  font-size: 36px;
+  color: #033143;
+  margin-bottom: 6px;
+}
+
+.wellness-title p {
+  font-size: 15px;
+  color: #666666;
+}
+
+.retreat-link {
+  color: #033143;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid #033143;
+  padding-bottom: 4px;
+}
+
+.wellness-bottom {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  width: 100%;
+}
+
+.well-card {
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.02);
+}
+
+.well-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+.well-info {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-badge {
+  color: #00a8b5;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.well-info h3 {
+  font-family: "Playfair Display", "Georgia", serif;
+  font-size: 20px;
+  color: #033143;
+}
+
+.well-info p {
+  font-size: 14px;
+  color: #666666;
+  line-height: 1.5;
+}
