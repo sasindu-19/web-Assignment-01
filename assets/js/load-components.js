@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <li><a href="About.html">About</a></li>
         </ul>
         <div class="nav-actions">
-          <a href="about.html#contact"><button class="btn-contact">Contact Us</button></a>
+          <a href="About.html#contact"><button class="btn-contact">Contact Us</button></a>
         </div>
       </section>
     `;
