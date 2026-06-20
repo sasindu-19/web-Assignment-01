@@ -21,6 +21,20 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
       </section>
     `;
+
+    // Dynamic navbar active page highlight
+    // try {
+    //   const currentPath = window.location.pathname.split("/").pop() || "index.html";
+    //   const navLinks = navbarContainer.querySelectorAll(".nav-links a");
+    //   navLinks.forEach(link => {
+    //     const href = link.getAttribute("href");
+    //     if (href === currentPath || (currentPath === "" && href === "index.html")) {
+    //       link.classList.add("active");
+    //     }
+    //   });
+    // } catch (e) {
+    //   console.error("Error setting active nav link:", e);
+    // }
   }
 
   const footerContainer = document.getElementById("global-footer");
