@@ -100,3 +100,64 @@ body {
   line-height: 1.6;
   color: #555555;
 }
+
+/* values-section */
+.values-section {
+  width: 100%;
+  padding: 80px 8%;
+  background-color: #f4f3ee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.values-top {
+  text-align: center;
+}
+.values-top h2 {
+  font-family: "Playfair Display", "Georgia", serif;
+  font-size: 36px;
+  color: #033143;
+  margin-top: 4px;
+}
+
+.values-bottom {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.value-card {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.value-num {
+  font-size: 28px;
+  font-weight: 800;
+  color: #698089;
+  font-family: "Playfair Display", "Georgia", serif;
+}
+
+.value-card h3 {
+  font-family: "Playfair Display", "Georgia", serif;
+  font-size: 22px;
+  color: #033143;
+}
+
+.value-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #666666;
+}
+
+/* contact-section */
