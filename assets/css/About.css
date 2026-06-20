@@ -1,4 +1,3 @@
-/* Global Reset */
 * {
   margin: 0;
   padding: 0;
@@ -10,4 +9,94 @@ body {
   width: 100%;
   overflow-x: hidden;
   background-color: #f4f3ee;
+}
+
+/* hero section */
+.about-hero {
+  width: 100%;
+  height: 450px;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%),
+    url("../Images/sri\ lanka\ mountains\ misty.jpg") no-repeat center
+      center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #ffffff;
+  padding: 0 8% 60px 8%;
+}
+
+.about-hero-content {
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.about-hero h1 {
+  font-family: "Playfair Display", "Georgia", serif;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.about-hero p {
+  font-size: 16px;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+/* philosophy-section */
+.philosophy-section {
+  width: 100%;
+  padding: 80px 8%;
+  background-color: #ffffff;
+}
+
+.philosophy-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.philo-left {
+  flex: 1;
+  height: 420px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.philo-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.philo-right {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sect-tag {
+  color: #00a8b5;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.philo-right-text h2 {
+  font-family: "Playfair Display", "Georgia", serif;
+  font-size: 36px;
+  color: #033143;
+}
+
+.philo-right-text p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #555555;
 }
